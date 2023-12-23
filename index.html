@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/viabrasil.css">
+  <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <title> ViaBrasil - Assesoria e Consultoria</title>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="./" class="logo"><img src="/img/viabrasil3.png" alt=""></a>
+
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2"></span>
+        </div>
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#about">Quem Somos</a>
+            <a href="#services">Serviços</a>
+            <a href="#partners">Parceiros</a>
+            <a href="#contact">Contatos</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2"></span>
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="overlay"></div>
+            <div class="home-content">
+                <h1>SEGURANÇA</h1>
+                <H1 class="distante">& AGILIDADE</H1>
+            </div>
+        
+    </section>
+
+
+    <!-- Sobre -->
+    <section class="about" id="about">
+        <h2 class="heading">Quem Somos</h2>
+
+        <div class="about-img">
+            <img src="/img/teste.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aut labore suscipit dolores laboriosam accusantium reiciendis? Voluptatem, laboriosam, cum voluptatum suscipit consequatur a alias totam vel quisquam, cupiditate quo dicta?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia consequatur possimus aliquid ipsum repudiandae perferendis alias rem distinctio nobis reprehenderit. Eius laborum voluptates totam alias reprehenderit quisquam minima provident?
+            </p>
+            <div class="btn-box btns">
+                <a href="" class="btn">Ler mais</a>
+            </div>
+        </div>
+    </section>
+    <!-- Serviços -->
+    <section class="services" id="services">
+
+    </section>
+    <!-- Parceiros -->
+    <div class="container" id="partners">
+        <h2 class="heading">Parceiros</h2>
+         <section class="customer-logos slider">
+            <div class="slide"><img src="img/facebok.png" alt=""></div>
+            <div class="slide"><img src="img/facebok.png" alt=""></div>
+            <div class="slide"><img src="img/facebok.png" alt=""></div>
+            <div class="slide"><img src="img/adidas.png" alt=""></div>
+            <div class="slide"><img src="img/adidas.png" alt=""></div>
+            <div class="slide"><img src="img/adidas.png" alt=""></div>
+            <div class="slide"><img src="img/corp.png" alt=""></div>
+            <div class="slide"><img src="img/corp.png" alt=""></div>                  
+         </section>
+      </div>
+
+
+    <!-- Contatos -->
+    <section class="contatos" id="contact">
+        <h2 class="heading">Contato</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Nome Completo" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Telefone" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Digita sua Mensagem"></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <a class="btn" type="submit">Enviar</a>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 por Caio | Todos os Direitos Reservados.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+<script src="/js/viabrasil.js"></script>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Slick -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+    
+</script>
+
+</body>
+</html>
